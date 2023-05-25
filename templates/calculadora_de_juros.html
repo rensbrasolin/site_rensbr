@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <style>
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    {% endblock %}
+
+    {% block body %}
+        <h1 class="text-center display-3">Calculadora de Juros</h1>
+        <hr><br>
+        <div class="lead">
+            <p>Compartilho aqui a minha calculadora de juros, uma ferramenta desenvolvida para atender
+                à necessidade de calcular os encargos de administração e antecipação em transações com
+                maquininhas de recebimento. Muitas empresas optam pela antecipação de recebíveis como
+                forma de impulsionar seus fluxos de caixa, e compreender com precisão os custos
+                associados à antecipação de vendas a prazo é de extrema importância. Com essa
+                calculadora, é possível obter uma visão clara e precisa dos encargos envolvidos
+                nesse processo, auxiliando na tomada de decisões financeiras estratégicas.
+            </p>
+            <p>A utilização da calculadora é simples e intuitiva. Basta fornecer todas as
+                informações necessárias nos campos indicados e clicar em "calcular".
+                Se você não pretende antecipar o valor, a calculadora pode ser usada para
+                calcular apenas a taxa da venda, inserindo o valor zero na taxa de antecipação.
+                Da mesma forma, se desejar calcular somente os juros, basta inserir zero na taxa
+                da venda. É fundamental preencher todos os campos para obter resultados precisos e confiáveis.
+            </p>
+            <p>Com um clique no botão "Calcular", você terá acesso a um resultado detalhado, fornecendo
+                informações sobre as taxas de administração e/ou antecipação envolvidas.
+            </p>
+            <br>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <br>
+                     <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <img src="{{ url_for('static', filename='calculadora_de_juros/img_calc_juros.png') }}" class="img-fluid img-responsive" alt="Calculadora de Juros">
+                        </div>
+        </div>
+                </div>
+            </div>
+            <br>
+            <p>Pensando na conveniência de compartilhar essa calculadora com outras pessoas, desenvolvi
+                uma interface de usuário utilizando a biblioteca TKInter e transformei o código em um
+                arquivo executável. Dessa forma, você pode facilmente baixar e utilizar a calculadora em
+                seu próprio computador.
+                <a href="{{ url_for('download_calculadora') }}" class="text-decoration-none text-terciary">Clique aqui para realizar o download e começar a utilizar.
+                </a>
+            </p>
+            <br>
+            <p>Ferramentas utilizadas no projeto:</p>
+            <ul>
+            <li>PyCharm: Edição do código.</li>
+            <li>Python: Linguagem de programação.</li>
+            <li>Python (TKInter): Criação da interface gráfica para o usuário.</li>
+            <li>Python (PyInstaller): Conversão do arquivo python em arquivo executável.</li>
+            </ul>
+        </div>
+    {% endblock %}

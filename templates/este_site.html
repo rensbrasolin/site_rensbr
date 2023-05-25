@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <style>
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    {% endblock %}
+
+    {% block body %}
+        <h1 class="text-center display-3">Este Site</h1>
+        <hr><br>
+        <div class="lead">
+            <p>Este site tem como objetivo apresentar alguns dos meus projetos para aqueles que
+                têm interesse. Ele foi inspirado em um projeto do curso Python Impressionador,
+                onde desenvolvemos um site completo usando o Flask, incluindo um banco de dados
+                e um sistema de cadastro, login e postagens para usuários.
+            </p>
+            <p>Atualmente, meu conhecimento em front-end ainda é básico, por isso utilizei apenas
+                um pouco de CSS e quase nenhum JavaScript. No entanto, acredito que o visual do
+                site como um todo esteja adequado. Conforme eu adquirir mais habilidades em
+                front-end, planejo reformular o layout do site e adicionar mais projetos.
+            </p>
+            <p>A construção deste site, sem dúvida, foi um dos projetos mais complexos que já
+                desenvolvi, exigindo o uso de várias ferramentas e abordando uma ampla gama de
+                tópicos. Essa experiência me proporcionou um valioso aprendizado e aprimorou muito
+                minhas habilidades na área de desenvlimento web.
+            </p>
+            <br>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <br>
+                     <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <img src="{{ url_for('static', filename='este_site/img_este_site.png') }}" class="img-fluid img-responsive" alt="Calculadora de Juros">
+                        </div>
+                     </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <br>
+            <p>Ferramentas utilizadas no projeto:</p>
+            <ul>
+            <li>Pycharm: Edição do código e administração dos arquivos do projeto.</li>
+            <li>Python: Linguagem de programação.</li>
+            <li>Python (Flask): Criação da aplicação web em si.</li>
+            <li>Bootstrap (Framework online): Desenvolvimento de componentes de interface e front-end.</li>
+            </ul>
+        </div>
+    {% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+    {% block head %}
+    {% endblock %}
+
+    {% block body %}
+        <h1 class="text-center display-3">Automação - Conferir Fechamento</h1>
+        <hr><br>
+        <div class="lead">
+            <p>Esta é uma automação que utilizo no meu trabalho e obtive prévia autorização para compartilhar.
+                Trata-se de uma tarefa comum que certamente faz parte do dia a dia de muitas empresas.
+                Embora seja simples, dependendo do volume de notas fiscais, pode ser demorada.
+            </p>
+            <p>A situação é a seguinte: o fornecedor agrupa as notas fiscais faturadas a cada quinzena e
+                emite a cobrança de todas elas em um ou mais boletos. A tarefa consiste em partir da lista
+                de notas fiscais (arquivo no 'Planilhas Google') que compõem o(s) boleto(s), acessar cada uma delas no sistema
+                para obter seus valores, em seguida somá-los e, por fim, dividir o total pelo número de boletos.
+                Se o valor do(s) boleto(s) coincidir com o resultado obtido no código, então a conferência
+                do fechamento está correta.
+            </p>
+            <p class="lead">Para essa automação inicial, optei por utilizar a biblioteca Selenium do Python,
+                que cria um navegador e o controla. Uma das vantagens é que o navegador pode operar em segundo plano,
+                permitindo que o computador seja utilizado para outras tarefas simultaneamente.
+            </p>
+            <br>
+            <div class="card">
+                <div class="card-body bg-light">
+                     <div style="text-align: center;">
+                        <h3 class="display-6">Conferir valores das notas fiscais</h3>
+                        <br>
+                        <iframe width="900" height="560.25" src="https://www.youtube.com/embed/pQneyJ-aOI0" frameborder="0" allowfullscreen>
+                        </iframe>
+                     </div>
+                </div>
+            </div>
+            <br>
+            <p>Outra etapa da tarefa de conferência de fechamento envolve a alteração do status de cada
+                nota fiscal, permitindo-nos ter controle sobre o que já foi faturado e o que ainda não foi.
+                O processo consiste em utilizar a mesma lista de notas fiscais (arquivo no 'Planilhas Google'),
+                acessar o sistema na mesma tela e, para cada nota fiscal, alterar o status de 'pedido' para
+                'compra'. Ao final, o código gera uma tabela (dataframe) que informa quais notas fiscais
+                tiveram seus status alterados.
+            </p>
+            <p>Embora fosse possível incorporar esse processo à automação anterior (alterando o status ao
+                obter o valor das notas fiscais), optei por utilizar outra ferramenta de automação, o PyAutoGUI.
+                Diferente do Selenium, o PyAutoGUI é uma espécie de robô (RPA) que permite efetivamente automatizar
+                 o uso do mouse e do teclado.
+            </p>
+            <p>Um último detalhe importante, é que para manter a dinâmica do vídeo e evitar cansaço,
+                fiz uma edição removendo um trecho da gravação.
+            </p>
+            <br>
+            <div class="card">
+                <div class="card-body bg-light">
+                     <div style="text-align: center;">
+                        <h3 class="display-6">Alterar status das notas fiscais</h3>
+                        <br>
+                            <iframe width="900" height="560.25" src="https://www.youtube.com/embed/6nBw4ad0JX8" frameborder="0" allowfullscreen>
+                        </iframe>
+                     </div>
+                </div>
+            </div>
+            <br>
+            <p>Essa automação não apenas libera os profissionais para que se dediquem a tarefas mais subjetivas,
+                mas também proporciona um notável aumento na velocidade e precisão dos processos. Como ilustrado
+                nos exemplos acima, é possível automatizar praticamente qualquer processo repetitivo que faça
+                parte da rotina empresarial, como o envio de relatórios por e-mail para os gestores, a inserção
+                e coleta de dados do sistema de gestão e muitos outros processos.
+            </p>
+            <br>
+            <p>Ferramentas utilizadas no projeto:</p>
+            <ul>
+            <li>Planilhas Google: Arquivo cotendo a relação com os números das notas fiscais que devem ser conferidas.</li>
+            <li>Jupyter Notebook: Edição do código.</li>
+            <li>Python: Linguagem de programação.</li>
+            <li>Python (Pandas): Leitura do arquivo com a relação de notas fiscasis, tratamento e visualização dos dados.</li>
+            <li>Python (Selenium): Controle do Google Chrome na automação web "Conferir Valor".</li>
+            <li>Python (PyAutoGUI): Controle do mouse e do teclado na automação RPA "Alterar Status".</li>
+            </ul>
+        </div>
+    {% endblock %}

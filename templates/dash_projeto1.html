@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+    {% block head %}
+    {% endblock %}
+
+    {% block body %}
+        <h1 class="text-center display-3">Dashboard - Projeto 1</h1>
+        <hr><br>
+        <div class="lead">
+            <p>Este dashboard foi criado com o objetivo de explorar recursos de algumas ferramentas de dados, em especial,
+                o Power BI. Embora os dados apresentados sejam fictícios e criados por mim, fiz questão de apresentá-los
+                de maneira coerente para que fosse possível compreender a essência das informações.
+            </p>
+            <p>O dashboard possui três páginas: Vendas, Clientes/Fornecedores e Funcionários, e cada uma delas apresenta
+                gráficos e informações relevantes sobre uma empresa fictícia que vende games, filmes, séries e livros.
+            </p>
+            <p class="lead">Para uma melhor compreensão dos dados apresentados, sugiro que os títulos dos gráficos
+                sejam lidos com atenção.</p>
+            <br>
+            <div class="card text-light">
+                <div class="card-body bg-light">
+                    <br>
+                     <div style="text-align: center;">
+                        <iframe title="Report Section" width="900" height="560.25" src="https://app.powerbi.com/view?r=eyJrIjoiODJiNzc0MTgtYjViMy00YWE0LWI3NjYtOGIzYjMzMWIzYmUyIiwidCI6IjZiZGZmMjVkLTNiY2YtNDBmNS1hOGFlLWM4MTllMTE4MWMyYSJ9" frameborder="0" allowFullScreen="true">
+                        </iframe>
+                     </div>
+                </div>
+            </div>
+            <br>
+            <p>Ferramentas utilizadas na criação desse dashboard:</p>
+            <ul>
+            <li>Excel: Criação da base dados.</li>
+            <li>Jupyter Notebook: Edição do código.</li>
+            <li>Python: Linguagem de programação.</li>
+            <li>Python (Pandas): Tratamento e análise de dados.</li>
+            <li>Power Point: Criação do layout do dashboard.</li>
+            <li>Power BI: Criação de medidas e colunas, bem como dos gráficos e elementos do dashboard.</li>
+            </ul>
+        </div>
+    {% endblock %}
