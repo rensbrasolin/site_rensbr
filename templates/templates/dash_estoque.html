@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+    {% block head %}
+    {% endblock %}
+
+    {% block body %}
+        <h1 class="text-center display-3">Dashboard de Estoque</h1>
+        <hr><br>
+        <div class="lead">
+            <p>A base de dados utilizada para esse dashboard foi disponibilizada para treinamento pela Hashtag
+                Treinamentos. Embora eu tenha mais familiaridade com a manipulação de dados no Excel e no Pandas,
+                minha intenção aqui foi utilizar o Power BI tanto para tratar os dados quanto para fazer as análises.
+                Assim, a construção desse dashboard me possibilitou adquirir mais experiência utilizando a linguagem
+                'M' no Power Query e a linguagem 'DAX' na modelagem de dados.
+            </p>
+            <p>Em comparação à base de dados utilizada para o meu primeiro dashboard, essa base de dados de estoque
+                ofereceu maiores possibilidades de análise. No entanto, como não havia um objetivo específico na
+                análise desses dados, priorizei análises de movimentação dos produtos em detrimento de análises de
+                valores financeiros.
+            </p>
+            <p>Esse dashboard possui duas segmentações: uma por ano e outra por subcategoria de produto. Os dados
+                simulam uma empresa varejista do setor de vestuário. Para melhor interpretar os gráficos, sugiro que
+                leiam os títulos de cada um deles.
+            </p>
+            <br>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <br>
+                     <div style="text-align: center;">
+                        <iframe title="Dash_Estoque" width="450" height="280.12" src="https://app.powerbi.com/view?r=eyJrIjoiMGM5NDkzOWYtY2UzYi00ZWVmLWJmMmItNWE3ZDY3ZGI4M2FmIiwidCI6IjZiZGZmMjVkLTNiY2YtNDBmNS1hOGFlLWM4MTllMTE4MWMyYSJ9" frameborder="0" allowFullScreen="true">
+                        </iframe>
+                     </div>
+                </div>
+            </div>
+            <br>
+            <p>Ferramentas utilizadas na criação desse dashboard:</p>
+            <ul>
+            <li>Excel: Visualização prévia da base dados.</li>
+            <li>Power Point: Criação do layout do dashboard.</li>
+            <li>Power BI: Tratamento e análise de dados, e criação dos gráficos e elementos do dashboard.</li>
+            </ul>
+        </div>
+    {% endblock %}
